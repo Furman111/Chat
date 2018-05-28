@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ripple"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/friend_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingNormal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nameTV"
+                style="@style/light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSizeExtraSmall"
+                tools:text="Степан Фурман" />
+
+            <TextView
+                android:id="@+id/dateTV"
+                style="@style/light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="@dimen/textSizeExtraSmall"
+                tools:text="28.05.1996" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/messageTV"
+            style="@style/regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:textSize="@dimen/textSizeNormal"
+            tools:text="Я говорю ему ты что делаешь? А он меня совсем не слушает, пришлось сказать да уж да уж да уж да уж да" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider" />
+
+</LinearLayout>
