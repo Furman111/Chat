@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">SecretChat</string>
+    <string name="app_name">Secrets Chat</string>
     <string name="friends_list_is_empty">У вас пока нет диалогов</string>
 </resources>
